@@ -1,0 +1,11 @@
+.lists { 
+    height: 30px;
+    width: 150px;
+    border: 1px #000 solid;
+}
+.lists li { padding: 5px 10px; z-index: 2; }
+.lists li:not(.init) { float: left; width: 130px; display: none; background: #ddd; }
+.lists .list:not(.init):hover, .lists .list.selected:not(.init) { background: #09f; }
+.list.init { cursor: pointer; }
+
+a#submit { z-index: 1; }
