@@ -1,0 +1,19 @@
+.brand-logo2{
+    width:40px;
+    display: none;
+    
+    
+}
+
+.brand-logo1{
+   display: block;
+    width: 160px;
+}
+
+.active{
+    display: block !important;
+}
+.hide{
+    display: none !important;
+}
+
