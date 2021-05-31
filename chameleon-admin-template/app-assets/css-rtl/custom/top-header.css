@@ -1,55 +1,76 @@
-.dropdown{
+.dropdown {
     font-family: vazir;
 }
-.content-wrapper{
-    padding: 0px!important;
+
+.content-wrapper {
+    padding: 0px !important;
 }
-.content-wrapper-before{
-    position: initial!important;
+
+.content-wrapper-before {
+    position: relative !important;
+    height: initial !important;
+    z-index: 1111 !important;
 }
+
 .content-wrapper-before .first-part {
-    height: 60px;
+    height: 30px;
     padding: 0 2.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
 }
-.content-wrapper-before .first-part .right{
+
+.content-wrapper-before .first-part .right {
     font-size: 18px;
-    color:#fff;
+    color: #fff;
 }
-.content-wrapper-before .first-part .left{
+
+.content-wrapper-before .first-part .left .user-name {
+    font-size: 10px;
+    color: #fff;
 }
-.content-wrapper-before .first-part .left .clock{
-    direction: ltr;
-    font-size: 22px;
-    color:#fff;
-}
-.content-wrapper-before .seconde-part{
-    height: 60px;
+
+.content-wrapper-before .first-part .left {}
+
+.content-wrapper-before .seconde-part {
+    height: 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 2.2rem;
 }
- .breadcrumb-holder{}
- .breadcrumb-holder .crumbs{
-     padding: 0;
-    display: flex; 
+
+.content-wrapper-before .seconde-part .clock {
+    direction: ltr;
+    font-size: 16px;
+    color: #fff;
+}
+
+.breadcrumb-holder {}
+
+.breadcrumb-holder .crumbs {
+    padding: 0;
+    display: flex;
     margin-bottom: 0;
- }
- .breadcrumb-holder .crumb{
-     list-style: none;
- }
- .breadcrumb-holder .crumbs a{
+}
+
+.breadcrumb-holder .crumb {
+    list-style: none;
+}
+
+.breadcrumb-holder .crumbs a {
     padding: 0 4px;
     color: #fff;
     transition: .2s all;
- }
- .breadcrumb-holder .crumbs a:hover{
-     opacity: .8;
- }
- .breadcrumb-holder .crumbs a::before{
+    font-size: 10px;
+}
+
+.breadcrumb-holder .crumbs a:hover {
+    opacity: .8;
+}
+
+.breadcrumb-holder .crumbs a::before {
     content: '';
     width: 5px;
     height: 5px;
@@ -57,7 +78,17 @@
     border-radius: 50%;
     display: inline-block;
     margin-left: 4px;
- }
- .breadcrumb-holder .crumbs .crumb:last-child a::before{
-     background-color: #66ffa6;
- }
+}
+
+.breadcrumb-holder .crumbs .crumb:last-child a::before {
+    background-color: #66ffa6;
+}
+
+html body.fixed-navbar {
+    padding-top: 50px;
+}
+
+.header-navbar {
+    height: 55px;
+    position: absolute;
+}

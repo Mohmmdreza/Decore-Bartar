@@ -49,7 +49,7 @@ a#submit {
     align-items: center;
     top: 0px;
     width: 45px;
-    height: 100%;
+    height: 36px;
     background-color: #B5B5C3;
 }
 
@@ -71,9 +71,11 @@ a#submit {
     font-weight: bold;
     font-size: 14px;
     line-height: 27px;
+    color: #fff;
 }
 
 .input-holder {
+    position: relative;
     overflow: hidden;
     margin-bottom: 16px;
 }
@@ -122,101 +124,6 @@ a#submit {
 }
 
 
-/* dropdown */
-/* .custom-dropdown,
-.dropholder {
-    background-color: #fff
-}
-
-.custom-dropdown {
-    float: left;
-    width: 208px;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 50px;
-    position: relative;
-    width: 100%;
-    padding-left: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    align-items: center
-}
-
-.custom-dropdown:after {
-    content: "▾";
-    font-size: 24px;
-    position: absolute;
-    left: 18px;
-    display: block;
-    top: 12px
-}
-
-.custom-dropdown.active+.dropdownMenu {
-    display: block
-}
-
-.custom-dropdown span {
-    color: #373f47
-}
-
-.custom-dropdown p {
-    text-align: center
-}
-
-.custom-dropdown i {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%)
-}
-
-.dropdownMenu {
-    padding: 0;
-    position: absolute;
-    left: 0;
-    top: 60px;
-    right: 0;
-    margin: 0;
-    cursor: pointer;
-    display: none;
-    background-color: #fff;
-    border-radius: 5px;
-    z-index: 999;
-    overflow: hidden;
-    box-shadow: 0 0 3px rgba(0, 0, 0, .3)
-}
-
-.dropdownMenu li {
-    padding: 10px 10px;
-    color: #e8f8ff;
-    list-style: none;
-    position: relative;
-    text-align: center
-}
-
-.dropdownMenu li i {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%)
-}
-
-.dropdownMenu li span {
-    color: #373f47
-}
-
-.dropdownMenu li:hover {
-    background-color: #50429d
-}
-
-.dropdownMenu li:hover span {
-    color: #fff
-}
-
-.dropdownMenu li:last-child {
-    border: none
-} */
 
 .color-red {
 
@@ -237,7 +144,6 @@ a#submit {
     margin-left: 16px;
     width: 120px;
     height: 40px;
-
     border: none;
     background: #0AE5D9;
     border-radius: 6px;
@@ -248,4 +154,25 @@ a#submit {
     line-height: 23px;
     text-align: center;
 
+}
+
+.add-user-form {
+    margin: 30px 0;
+}
+
+
+
+.input-holder select {
+    padding: 6px;
+    outline: 0;
+    width: 100%;
+    border: none;
+    background: #F3F6F9;
+    border-radius: 4px;
+    color: #ccc;
+}
+
+.input-holder option {
+    color: #464646;
+    font-weight: 100;
 }

@@ -122,23 +122,22 @@ $(document).ready(function () {
 
 
 
-// DropDown
-// $(".lists").on("click", ".init", function () {
-//     $(this).closest(".lists").children('.list:not(.init)').toggle();
+$(".lists").on("click", ".init", function () {
+    $(this).closest(".lists").children('.list:not(.init)').toggle();
 
-// });
+});
 
-// var allOptions = $(".lists").children('.list:not(.init)');
-// $(".lists").on("click", ".list:not(.init)", function () {
-//     allOptions.removeClass('selected');
-//     $(this).addClass('selected');
-//     $(".lists").children('.init').html($(this).html());
-//     allOptions.toggle();
-// });
+var allOptions = $(".lists").children('.list:not(.init)');
+$(".lists").on("click", ".list:not(.init)", function () {
+    allOptions.removeClass('selected');
+    $(this).addClass('selected');
+    $(".lists").children('.init').html($(this).html());
+    allOptions.toggle();
+});
 
-// $(".lists").click(function () {
-//     $(".rotate").toggleClass("down");
-// })
+$(".lists").click(function () {
+    $(".rotate").toggleClass("down");
+})
 
 // // DropDown New
 // var selectBtn = document.getElementsByClassName('custom-dropdown'),

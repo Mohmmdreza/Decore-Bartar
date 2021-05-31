@@ -552,14 +552,15 @@
       <div class="content-wrapper-before">
         <div class="first-part">
           <div class="right">
-            خوش آمدید مدیر سیستم
+            <div class="head-title">
+              <div class="icon"><img />
+              </div>
+              <h2>تعریف کاربر</h2>
+            </div>
           </div>
           <div class="left">
-            <div class="clock">
-              06:08
-              <span>
-                ب.ظ
-              </span>
+            <div class="user-name">
+              علیرضا ریاضی
             </div>
           </div>
         </div>
@@ -569,6 +570,12 @@
               <li class="crumb"><a href="#">مدیریت کاربران سیستم</a></li>
               <li class="crumb"><a href="#">تعریف/سطح دسترسی کاربر</a></li>
           </div>
+          <div class="clock">
+            06:08
+            <span>
+              ب.ظ
+            </span>
+          </div>
         </div>
       </div>
       <div class="content-header row">
@@ -577,17 +584,7 @@
         <!-- add user content -->
 
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="head-title">
-                <div class="icon"><img />
-                </div>
-                <h2 class="color-red">تعریف کاربر</h2>
-              </div>
-            </div>
-          </div>
-
-          <form>
+          <form action="#" class="add-user-form">
             <div class="row">
               <div class="col-4">
                 <div class="input-holder">
@@ -613,54 +610,15 @@
             </div>
             <div class="row">
               <div class="col-4">
+
                 <div class="input-holder">
-                  <label>سطح دسترسی</label>
-                  <ul class="lists">
-                    <div class="rotate-holder">
-                      <i class="fas fa-chevron-down rotate"></i>
-                    </div>
-                    <li class="init">یک گزینه را انتخاب کنید .</li>
-                    <li data-value="value 1" class="list">Option 1</li>
-                    <li data-value="value 2" class="list">Option 2</li>
-                    <li data-value="value 3" class="list">Option 3</li>
-                  </ul>
-                  <!-- <div class="dropholder">
-                    <div class="custom-dropdown">
-                      <p>عرض مورد نظر خود را انتخاب کنید</p>
-                    </div>
-                    <ul class="dropdownMenu">
-                      <li>
-
-                        <i class="fab fa-bitcoin bitcoin "></i>
-                        <span>بیتکوین</span>
-
-                      </li>
-                      <li>
-
-                        <i class="fab fa-bitcoin bitcoin "></i>
-                        <span>بیتکوین</span>
-
-                      </li>
-                      <li>
-
-                        <i class="fab fa-bitcoin bitcoin "></i>
-                        <span>بیتکوین</span>
-
-                      </li>
-                      <li>
-
-                        <i class="fab fa-bitcoin bitcoin"></i>
-                        <span>بیتکوین</span>
-
-                      </li>
-                      <li>
-
-                        <i class="fab fa-bitcoin bitcoin"></i>
-                        <span>بیتکوین</span>
-
-                      </li>
-                    </ul>
-                  </div> -->
+                  <label id="name-label">سطح دسترسی</label>
+                  <select class="form-select ">
+                    <option disabled selected>یک گزینه را انتخاب کنید</option>
+                    <option>ادمین</option>
+                    <option>کاربر با سطح دسترسی یک</option>
+                    <option>کاربر با سطح دسترسی دو</option>
+                  </select>
                 </div>
               </div>
               <div class="col-4">
@@ -686,8 +644,17 @@
                 </div>
               </div>
 
-              <button class="btn-submit">ثبت</button>
             </div>
+
+
+
+
+
+
+
+
+            <button class="btn-submit">ثبت</button>
+
           </form>
 
 

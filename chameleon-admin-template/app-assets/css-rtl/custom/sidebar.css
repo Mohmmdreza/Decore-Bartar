@@ -1,19 +1,26 @@
-.brand-logo2{
-    width:40px;
-    display: none;
-    
-    
+.navbar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 
-.brand-logo1{
-   display: block;
+.brand-logo2 {
+    width: 40px;
+    display: none;
+
+
+}
+
+.brand-logo1 {
+    display: block;
     width: 160px;
 }
 
-.active{
+.active {
     display: block !important;
 }
-.hide{
+
+.hide {
     display: none !important;
 }
-
