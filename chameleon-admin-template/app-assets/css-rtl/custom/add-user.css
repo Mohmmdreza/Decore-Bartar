@@ -1,11 +1,251 @@
-.lists { 
-    height: 30px;
-    width: 150px;
-    border: 1px #000 solid;
+.app-content {
+    background-color: #fff;
 }
-.lists li { padding: 5px 10px; z-index: 2; }
-.lists li:not(.init) { float: left; width: 130px; display: none; background: #ddd; }
-.lists .list:not(.init):hover, .lists .list.selected:not(.init) { background: #09f; }
-.list.init { cursor: pointer; }
 
-a#submit { z-index: 1; }
+.lists {
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+    background: #F3F6F9;
+    border-radius: 4px;
+    position: relative;
+}
+
+.lists .list {
+    z-index: 2;
+    list-style: none;
+}
+
+.lists .list:not(.init) {
+    width: 130px;
+    display: none;
+    background: #ddd;
+}
+
+.init {
+    list-style: none;
+    position: relative;
+    z-index: 1111;
+}
+
+.lists .list:not(.init):hover,
+.lists .list.selected:not(.init) {
+    background: #09f;
+}
+
+.list.init {
+    cursor: pointer;
+}
+
+a#submit {
+    z-index: 1;
+}
+
+.rotate-holder {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    width: 45px;
+    height: 100%;
+    background-color: #B5B5C3;
+}
+
+.rotate {
+    color: #fff;
+}
+
+.rotate.down {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.head-title {
+    margin-bottom: 30px;
+}
+
+.head-title h2 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.input-holder {
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.input-holder input {
+    padding: 8px;
+    outline: 0;
+    width: 100%;
+    border: none;
+    background: #F3F6F9;
+    border-radius: 4px;
+}
+
+.input-holder input::placeholder {
+    opacity: 30%;
+}
+
+.input-holder label {
+    display: block;
+}
+
+.input-holder span {
+    margin-top: 4px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-group-addon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    padding: 0 !important;
+    background-color: transparent;
+}
+
+.input-group-addon i {
+    color: rgba(60, 60, 67, 0.3);
+}
+
+
+/* dropdown */
+/* .custom-dropdown,
+.dropholder {
+    background-color: #fff
+}
+
+.custom-dropdown {
+    float: left;
+    width: 208px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center
+}
+
+.custom-dropdown:after {
+    content: "▾";
+    font-size: 24px;
+    position: absolute;
+    left: 18px;
+    display: block;
+    top: 12px
+}
+
+.custom-dropdown.active+.dropdownMenu {
+    display: block
+}
+
+.custom-dropdown span {
+    color: #373f47
+}
+
+.custom-dropdown p {
+    text-align: center
+}
+
+.custom-dropdown i {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.dropdownMenu {
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    right: 0;
+    margin: 0;
+    cursor: pointer;
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 999;
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3)
+}
+
+.dropdownMenu li {
+    padding: 10px 10px;
+    color: #e8f8ff;
+    list-style: none;
+    position: relative;
+    text-align: center
+}
+
+.dropdownMenu li i {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.dropdownMenu li span {
+    color: #373f47
+}
+
+.dropdownMenu li:hover {
+    background-color: #50429d
+}
+
+.dropdownMenu li:hover span {
+    color: #fff
+}
+
+.dropdownMenu li:last-child {
+    border: none
+} */
+
+.color-red {
+
+    color: #E50A16 !important;
+}
+
+.error {
+    color: #E50A16 !important;
+    border: 1px solid #E50A16 !important;
+    background-color: rgba(229, 10, 22, 0.05) !important;
+}
+
+.btn-submit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 55px;
+    margin-left: 16px;
+    width: 120px;
+    height: 40px;
+
+    border: none;
+    background: #0AE5D9;
+    border-radius: 6px;
+    color: white;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+
+}

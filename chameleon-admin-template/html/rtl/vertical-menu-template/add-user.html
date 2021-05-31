@@ -582,9 +582,8 @@
               <div class="head-title">
                 <div class="icon"><img />
                 </div>
-                <h2>تعریف کاربر</h2>
+                <h2 class="color-red">تعریف کاربر</h2>
               </div>
-
             </div>
           </div>
 
@@ -592,20 +591,23 @@
             <div class="row">
               <div class="col-4">
                 <div class="input-holder">
-                  <label>نام</label>
-                  <input placeholder="مثال:علی" type="text" />
+                  <label id="name-label">نام</label>
+                  <input placeholder="مثال:علی" type="text" id="name" required />
+                  <span class="color-red d-none name-span">پر کردن این فیلد اجباری است</span>
                 </div>
               </div>
               <div class="col-4">
                 <div class="input-holder">
-                  <label>نام خانوادگی</label>
-                  <input placeholder="مثال:طباطبایی" type="text" />
+                  <label id="lastname-label">نام خانوادگی</label>
+                  <input placeholder="مثال:طباطبایی" type="text" id="lastname" required />
+                  <span class="color-red d-none lastname-span">پر کردن این فیلد اجباری است</span>
                 </div>
               </div>
               <div class="col-4">
                 <div class="input-holder">
-                  <label>شماره همراه</label>
-                  <input placeholder="مثال:09123886232" type="text" />
+                  <label id="phone-label">شماره همراه</label>
+                  <input placeholder="مثال:09123886232" type="text" id="phone" />
+                  <span class="color-red d-none phone-span">پر کردن این فیلد اجباری است</span>
                 </div>
               </div>
             </div>
@@ -614,31 +616,77 @@
                 <div class="input-holder">
                   <label>سطح دسترسی</label>
                   <ul class="lists">
+                    <div class="rotate-holder">
+                      <i class="fas fa-chevron-down rotate"></i>
+                    </div>
                     <li class="init">یک گزینه را انتخاب کنید .</li>
                     <li data-value="value 1" class="list">Option 1</li>
                     <li data-value="value 2" class="list">Option 2</li>
                     <li data-value="value 3" class="list">Option 3</li>
                   </ul>
+                  <!-- <div class="dropholder">
+                    <div class="custom-dropdown">
+                      <p>عرض مورد نظر خود را انتخاب کنید</p>
+                    </div>
+                    <ul class="dropdownMenu">
+                      <li>
+
+                        <i class="fab fa-bitcoin bitcoin "></i>
+                        <span>بیتکوین</span>
+
+                      </li>
+                      <li>
+
+                        <i class="fab fa-bitcoin bitcoin "></i>
+                        <span>بیتکوین</span>
+
+                      </li>
+                      <li>
+
+                        <i class="fab fa-bitcoin bitcoin "></i>
+                        <span>بیتکوین</span>
+
+                      </li>
+                      <li>
+
+                        <i class="fab fa-bitcoin bitcoin"></i>
+                        <span>بیتکوین</span>
+
+                      </li>
+                      <li>
+
+                        <i class="fab fa-bitcoin bitcoin"></i>
+                        <span>بیتکوین</span>
+
+                      </li>
+                    </ul>
+                  </div> -->
                 </div>
               </div>
               <div class="col-4">
                 <div class="input-holder">
-                  <label>نام کاربری</label>
-                  <input placeholder="ali1254:مثال" type="text" />
+                  <label id="username-label">نام کاربری</label>
+                  <input placeholder="مثال :ali1254" type="text" id="username" />
+                  <span class="color-red d-none username-span">پر کردن این فیلد اجباری است</span>
                 </div>
               </div>
               <div class="col-4">
                 <div class="input-holder">
-                  <label>رمزعبور</label>
+                  <label id="pass-label">رمزعبور</label>
                   <div class="input-group" id="show_hide_password">
                     <input class="" id="password" type="password" placeholder="حدااقل 8 کاراکتر وارد کنید">
-                    <div class="input-group-addon">
-                      <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
-                      <span class="error-validation" style="display:none;">رمز عبور باید بیشتر از 8 کارکتر باشد</span>
+                    <div class="input-group-addon ">
+                      <a href=""><i class="fa fa-eye-slash " aria-hidden="true"></i></a>
+
                     </div>
+
                   </div>
+                  <span class="error-validation" style="display:none;">رمز عبور باید بیشتر از 8 کارکتر باشد</span>
+                  <span class="color-red d-none pass-span">پر کردن این فیلد اجباری است</span>
                 </div>
               </div>
+
+              <button class="btn-submit">ثبت</button>
             </div>
           </form>
 

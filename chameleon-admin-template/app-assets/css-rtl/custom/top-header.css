@@ -1,8 +1,11 @@
 .dropdown{
     font-family: vazir;
 }
+.content-wrapper{
+    padding: 0px!important;
+}
 .content-wrapper-before{
-    
+    position: initial!important;
 }
 .content-wrapper-before .first-part {
     height: 60px;
